@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>PAYMENT PAGE</title>
+
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+
+    </head>
+    <body>
+        <header>
+
+
+
+        </header>
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="container" style="text-align: center; margin-top: 10vh;  margin-left: 30%">
+            <div class="card w-50 " style="border-color: azure">
+              <div class="card-body">
+                <h1 class="card-title">Bizum | Traveling</h1>
+                  <br>
+                <h3 class="card-text">Introduce tu teléfono para realizar la compra</h3>
+              </div>
+            </div>
+                <br>
+            <div class="card w-50">
+              <div class="card-body">
+                <h5 class="card-title">Teléfono registrado en bizum</h5>
+                <p class="card-text" >
+                    <h1>📱</h1> <input style="height: 5vh; width: 25vh" type="tel" id="tel" name="tel" placeholder="Introduce tu teléfono"/>
+                </p>
+                <a href="" class="btn btn-primary" style="height: 5vh; width: 25vh; font-size: x-large">Continuar</a>
+                  <br>
+                  <br>
+                  <h4>Su compra es de 50€</h4>
+              </div>
+            </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </form>
+    </body>
+</html>

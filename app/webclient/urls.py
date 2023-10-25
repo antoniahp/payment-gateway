@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import create_payment
+from .views import checkout
+from .views import bizum
 
 urlpatterns = [
-    path("", create_payment, name="create_payment")
+    path("", checkout, name="checkout"),
+    path("bizum", bizum, name="bizum")
 ]
